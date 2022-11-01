@@ -4,10 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Protal Berita Codeigniter</title>
+  <title>SPK Karyawan Terbaik</title>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="<?= base_url('css/bootstrap.min.css') ?>" />
+  <link rel="stylesheet" href="<?= base_url('css/dataTables.bootstrap5.min.css') ?>" />
+
+  <!-- Jquery dan Bootsrap JS -->
+  <script src="<?= base_url('js/jquery-3.5.1.js') ?>"></script>
+  <script src="<?= base_url('js/bootstrap.min.js') ?>"></script>
 
 </head>
 
@@ -21,9 +26,9 @@
 
   <?= $this->include('layout/footer') ?>
 
-  <!-- Jquery dan Bootsrap JS -->
-  <script src="<?= base_url('js/jquery.min.js') ?>"></script>
-  <script src="<?= base_url('js/bootstrap.min.js') ?>"></script>
+  
+  <script src="<?= base_url('js/jquery.dataTables.min.js') ?>"></script>
+  <script src="<?= base_url('js/dataTables.bootstrap5.min.js') ?>"></script>
 
 </body>
 

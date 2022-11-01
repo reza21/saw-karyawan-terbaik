@@ -7,16 +7,19 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url('news') ?>">News</a>
+          <a class="nav-link" href="<?= base_url('karyawan') ?>">Data Karyawan</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url('about') ?>">About</a>
+          <a class="nav-link" href="<?= base_url('') ?>">Kriteria</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url('contact') ?>">Contact</a>
+          <a class="nav-link" href="<?= base_url('') ?>">Setting Periode</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url('faqs') ?>">Faqs</a>
+          <a class="nav-link" href="<?= base_url('') ?>">Perhitungan &amp; Hasil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?= base_url('') ?>">Laporan</a>
         </li>
       </ul>
     </div>
