@@ -13,7 +13,10 @@
           <a class="nav-link" href="<?= base_url('') ?>">Kriteria</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url('') ?>">Setting Periode</a>
+          <a class="nav-link" href="<?= base_url('') ?>">Periode</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?= base_url('') ?>">Kriteria - Periode</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?= base_url('') ?>">Perhitungan &amp; Hasil</a>

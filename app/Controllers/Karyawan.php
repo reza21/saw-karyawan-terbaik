@@ -8,4 +8,11 @@ class Karyawan extends BaseController
     {
         return view('pages/karyawan/index');
     }
+
+    public function add()
+    {
+        return view('pages/karyawan/add');
+    }
+
+    
 }
