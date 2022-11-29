@@ -2,23 +2,17 @@
 
 <?= $this->section('content') ?>
 
-
-
 <div class="container mt-3 mb-3">
-  <h1>Input Data Karyawan</h1>
+  <h1>Input Data Kriteria</h1>
   <form>
     <div class="row mb-3">
       <div class="col">
         <div class="mb-3">
-          <label class="form-label">NIP</label>
-          <input type="text" class="form-control" placeholder="Input NIP">
+          <label class="form-label">Nama Kriteria</label>
+          <input type="text" class="form-control" placeholder="Input Nama Kriteria">
         </div>
         <div class="mb-3">
-          <label class="form-label">Nama</label>
-          <input type="text" class="form-control" placeholder="Input Nama">
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Jenis Kelamin</label>
+          <label class="form-label">Tipe Kriteria</label>
           <div class="form-check">
             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
             <label class="form-check-label" for="flexRadioDefault1">
@@ -31,10 +25,6 @@
               Perempuan
             </label>
           </div>
-        </div>
-        <div class="mb-3">
-          <label class="form-label">No HP</label>
-          <input type="text" class="form-control" placeholder="Input No HP">
         </div>
         <div class="mb-3">
           <button type="submit" class="btn btn-primary">Simpan</button>

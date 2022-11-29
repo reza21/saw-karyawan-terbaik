@@ -10,10 +10,10 @@
           <a class="nav-link" href="<?= base_url('karyawan') ?>">Data Karyawan</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url('') ?>">Kriteria</a>
+          <a class="nav-link" href="<?= base_url('kriteria') ?>">Kriteria</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url('') ?>">Periode</a>
+          <a class="nav-link" href="<?= base_url('periode') ?>">Periode</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?= base_url('') ?>">Kriteria - Periode</a>
