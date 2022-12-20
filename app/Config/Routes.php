@@ -38,10 +38,29 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/karyawan', 'Karyawan::index');
 $routes->get('/karyawan/add', 'Karyawan::add');
+$routes->get('/karyawan/edit/(:any)', 'Karyawan::edit/$1');
+$routes->add('/karyawan/save', 'Karyawan::save');
+$routes->add('/karyawan/update', 'Karyawan::update');
+$routes->get('/karyawan/delete/(:any)', 'Karyawan::delete/$1');
+
 $routes->get('/kriteria', 'Kriteria::index');
 $routes->get('/kriteria/add', 'Kriteria::add');
+$routes->get('/kriteria/edit/(:any)', 'Kriteria::edit/$1');
+$routes->add('/kriteria/save', 'Kriteria::save');
+$routes->add('/kriteria/update', 'Kriteria::update');
+$routes->get('/kriteria/delete/(:any)', 'Kriteria::delete/$1');
+
 $routes->get('/periode', 'Periode::index');
 $routes->get('/periode/add', 'Periode::add');
+$routes->get('/periode/add', 'Periode::add');
+$routes->get('/periode/edit/(:any)', 'Periode::edit/$1');
+$routes->add('/periode/save', 'Periode::save');
+$routes->add('/periode/update', 'Periode::update');
+$routes->get('/periode/delete/(:any)', 'Periode::delete/$1');
+
+
+$routes->get('/kriteriaperiode', 'KriteriaPeriode::index');
+$routes->get('/kriteriaperiode/setting/(:any)', 'KriteriaPeriode::setting/$1');
 
 /*
  * --------------------------------------------------------------------

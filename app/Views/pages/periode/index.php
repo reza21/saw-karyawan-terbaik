@@ -20,22 +20,18 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>1</td>
-        <td>2022</td>
-        <td>
-          <a href="#">Edit</a>
-          <a href="#">Hapus</a>
-        </td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>2021</td>
-        <td>
-          <a href="#">Edit</a>
-          <a href="#">Hapus</a>
-        </td>
-      </tr>
+      <?php $no = 1;
+      foreach ($getPeriode as $isi) { ?>
+        <tr>
+          <td><?= $no; ?></td>
+          <td><?= $isi['tahun']; ?></td>
+          <td>
+            <a href="<?= base_url('periode/edit/' . $isi['id_periode']); ?>" class="btn btn-success">Edit</a>
+            <a href="<?= base_url('periode/delete/' . $isi['id_periode']); ?>" onclick="javascript:return confirm('Apakah ingin menghapus data Periode ?')" class="btn btn-danger">Hapus</a>
+          </td>
+        </tr>
+      <?php $no++;
+      } ?>
     <tfoot>
       <tr>
         <th>No</th>

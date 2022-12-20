@@ -3,26 +3,26 @@
 <?= $this->section('content') ?>
 
 <div class="container mt-3 mb-3">
-  <h1>Input Data Kriteria</h1>
-  <form method="post" action="<?= base_url('kriteria/save');?>">
+  <h1>Setting Kriteria per Periode</h1>
+  <form>
     <div class="row mb-3">
       <div class="col">
         <div class="mb-3">
           <label class="form-label">Nama Kriteria</label>
-          <input type="text" class="form-control" name="nama_kriteria" placeholder="Input Nama Kriteria" required>
+          <input type="text" class="form-control" placeholder="Input Nama Kriteria">
         </div>
         <div class="mb-3">
           <label class="form-label">Tipe Kriteria</label>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="radioTipe" id="radioTipe1" value="b" checked>
-            <label class="form-check-label" for="radioTipe1">
-              Benefit
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+            <label class="form-check-label" for="flexRadioDefault1">
+              laki-laki
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="radioTipe" id="radioTipe2" value="c">
-            <label class="form-check-label" for="radioTipe2">
-              Cost
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Perempuan
             </label>
           </div>
         </div>
