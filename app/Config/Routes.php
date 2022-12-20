@@ -60,6 +60,8 @@ $routes->get('/periode/delete/(:any)', 'Periode::delete/$1');
 
 
 $routes->get('/kriteriaperiode', 'KriteriaPeriode::index');
+$routes->post('/kriteriaperiode', 'KriteriaPeriode::index');
+$routes->post('/kriteriaperiode/save', 'KriteriaPeriode::save');
 $routes->get('/kriteriaperiode/setting/(:any)', 'KriteriaPeriode::setting/$1');
 
 /*
