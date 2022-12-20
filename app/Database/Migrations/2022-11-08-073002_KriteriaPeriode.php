@@ -31,8 +31,8 @@ class KriteriaPeriode extends Migration
 				'default'        => 'Kriteria',
 			],
 			'bobot'      => [
-				'type'           => 'DECIMAL',
-				'constraint'     => 1,
+				'type'           => 'INT',
+				'constraint'     => 11,
 			],
 		]);
 
