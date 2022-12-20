@@ -21,24 +21,17 @@
       </tr>
     </thead>
     <tbody>
+      <?php $no=1; foreach($getKriteria as $isi){?>
       <tr>
-        <td>1</td>
-        <td>Kriteria 1</td>
-        <td>Benefit</td>
+        <td><?= $no;?></td>
+        <td><?= $isi['nama_kriteria'];?></td>
+        <td><?= $isi['tipe'] == 'b' ? 'Benefit' : 'Cost' ;?></td>
         <td>
-          <a href="#">Edit</a>
-          <a href="#">Hapus</a>
+          <a href="<?= base_url('kriteria/edit/'.$isi['id_kriteria']);?>" class="btn btn-success">Edit</a>
+          <a href="<?= base_url('kriteria/delete/'.$isi['id_kriteria']);?>" onclick="javascript:return confirm('Apakah ingin menghapus data Kriteria ?')" class="btn btn-danger">Hapus</a>
         </td>
       </tr>
-      <tr>
-        <td>1</td>
-        <td>Kriteria 2</td>
-        <td>Cost</td>
-        <td>
-          <a href="#">Edit</a>
-          <a href="#">Hapus</a>
-        </td>
-      </tr>
+      <?php $no++;} ?>
     <tfoot>
       <tr>
         <th>No</th>

@@ -19,54 +19,27 @@
         <th>Nama</th>
         <th>Jenis Kelamin</th>
         <th>No HP</th>
+        <th>Alamat</th>
         <th>Action</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>1</td>
-        <td>0123456789</td>
-        <td>Agus</td>
-        <td>Laki-laki</td>
-        <td>085645465564</td>
-        <td>
-          <a href="#">Edit</a>
-          <a href="#">Hapus</a>
-        </td>
-      </tr>
-      <tr>
-      <td>1</td>
-        <td>0123456789</td>
-        <td>Agus</td>
-        <td>Laki-laki</td>
-        <td>085645465564</td>
-        <td>
-          <a href="#">Edit</a>
-          <a href="#">Hapus</a>
-        </td>
-      </tr>
-      <tr>
-      <td>1</td>
-        <td>0123456789</td>
-        <td>Agus</td>
-        <td>Laki-laki</td>
-        <td>085645465564</td>
-        <td>
-          <a href="#">Edit</a>
-          <a href="#">Hapus</a>
-        </td>
-      </tr>
-      <tr>
-      <td>1</td>
-        <td>0123456789</td>
-        <td>Agus</td>
-        <td>Laki-laki</td>
-        <td>085645465564</td>
-        <td>
-          <a href="#">Edit</a>
-          <a href="#">Hapus</a>
-        </td>
-      </tr>
+      <?php $no = 1;
+      foreach ($getKaryawan as $isi) { ?>
+        <tr>
+          <td><?= $no; ?></td>
+          <td><?= $isi['nip']; ?></td>
+          <td><?= $isi['nama']; ?></td>
+          <td><?= $isi['jns_kel'] == 'L' ? 'Laki-laki' : 'Perempuan'; ?></td>
+          <td><?= $isi['no_hp']; ?></td>
+          <td><?= $isi['alamat']; ?></td>
+          <td>
+            <a href="<?= base_url('karyawan/edit/' . $isi['id_karyawan']); ?>" class="btn btn-success">Edit</a>
+            <a href="<?= base_url('karyawan/delete/' . $isi['id_karyawan']); ?>" onclick="javascript:return confirm('Apakah ingin menghapus data karyawan ?')" class="btn btn-danger">Hapus</a>
+          </td>
+        </tr>
+      <?php $no++;
+      } ?>
     <tfoot>
       <tr>
         <th>No</th>
@@ -74,6 +47,7 @@
         <th>Nama</th>
         <th>Jenis Kelamin</th>
         <th>No HP</th>
+        <th>Alamat</th>
         <th>Action</th>
       </tr>
     </tfoot>

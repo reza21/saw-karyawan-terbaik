@@ -16,7 +16,7 @@ class Periode extends Migration
 				'auto_increment' => true
 			],
 			'tahun'      => [
-				'type'           => 'DATE',
+				'type'           => 'YEAR',
 			],
 		]);
 

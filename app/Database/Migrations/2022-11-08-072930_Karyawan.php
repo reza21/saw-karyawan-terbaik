@@ -29,9 +29,14 @@ class Karyawan extends Migration
 				'constraint'     => ['L', 'P', 'N'],
 				'default'        => 'N',
 			],
-			'np_hp'      => [
+			'no_hp'      => [
 				'type'           => 'VARCHAR',
 				'constraint'     => 14,
+			],
+			'alamat'      => [
+				'type'           => 'VARCHAR',
+				'constraint'     => 255,
+				'default'        => 'Alamat',
 			],
 		]);
 
